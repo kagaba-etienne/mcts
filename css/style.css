@@ -491,6 +491,28 @@ section {
   .home .row .content h3 {
     font-size: 8rem;
   }
+
+  .teachers .slide img {
+    height: 40rem;
+    object-fit: scale-down;
+  }
+
+  .teachers .slide h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  .teachers .slide h2 {
+    margin: 0.8rem 0;
+    font-size: 1.6rem;
+  }
+
+  .teachers .slide p {
+    font-size: 1.5rem;
+    margin: 0 10%;
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
