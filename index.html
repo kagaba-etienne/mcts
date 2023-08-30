@@ -31,9 +31,10 @@
         <nav class="navbar">
           <a href="#home">home</a>
           <a href="#about">about</a>
-          <a href="#courses">services</a>
+          <a href="#whoWeAre">who we are</a>
+          <!-- <a href="#courses">services</a> -->
           <a href="#teachers">Team</a>
-          <a href="#reviews">reviews</a>
+          <!-- <a href="#reviews">reviews</a> -->
           <a href="#contact">contact</a>
         </nav>
 
@@ -107,7 +108,6 @@
     <!-- couter section ends -->
 
     <!-- about section starts  -->
-
     <section class="about" id="about">
       <div class="row">
         <div class="image">
@@ -134,12 +134,11 @@
         </div>
       </div>
     </section>
-
     <!-- about section ends -->
 
     <!-- courses section starts  -->
-
-    <section class="courses" id="courses">
+    <!-- ============ Courses section is not necessary for now but can be added when needed ========= -->
+    <!-- <section class="courses" id="courses">
       <h1 class="heading">our <span>courses</span></h1>
 
       <div class="swiper course-slider">
@@ -201,12 +200,73 @@
 
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- courses section ends -->
 
-    <!-- teachers section starts  -->
+    <!-- Who we are section starts  -->
+    <section class="whoWeAre" id="whoWeAre">
+      <h3>Who we <span>are</span></h3>
+      <div class="row">
+        <div class="content">
+          <h2>Uniqueness</h2>
+          <p>
+            We are unique because we offer a comprehensive approach to math
+            education. We provide students with tailored content, opportunities
+            to compete, and expert instruction. We also have a team of
+            experienced and passionate math educators who are committed to
+            helping students succeed.
+          </p>
+          <h2>Core Values</h2>
+          <p>
+            <span>**</span>Excellence:<span>**</span> We strive to provide the
+            highest quality math education possible.
+          </p>
+          <p>
+            <span>**</span>Innovation:<span>**</span> We are constantly looking
+            for new and better ways to teach math.
+          </p>
+          <p>
+            <span>**</span>Collaboration:<span>**</span> We work together with
+            students, parents, and educators to create a positive and supportive
+            learning environment.
+          </p>
+          <p>
+            <span>**</span>Fun:<span>**</span> We believe that learning math
+            should be fun and engaging.
+          </p>
+        </div>
+        <div class="content">
+          <h2>Customers</h2>
+          <p>
+            Our customers are students of all ages who are looking to improve
+            their math skills. We work with students from elementary school
+            through high school, as well as college students and adults.
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h2>Goals</h2>
+          <p>
+            <span>*</span>Expand our reach to more students around the world.
+          </p>
+          <p><span>*</span>Develop new and innovative ways to teach math.</p>
+          <p>
+            <span>*</span>Partner with schools and other organizations to
+            improve math education.
+          </p>
+          <p>
+            <span>*</span>Become the leading provider of math education in the
+            world.
+          </p>
+        </div>
+      </div>
+      <a href="#contact" class="btn">contact us</a>
+    </section>
+    <!-- Who we are section ends -->
 
+    <!-- teachers section starts  -->
     <section class="teachers" id="teachers">
       <h1 class="heading">Team <span>Members</span></h1>
 
@@ -459,12 +519,11 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
     <!-- teachers section ends -->
 
     <!-- reviews section starts  -->
-
-    <section class="reviews" id="reviews">
+    <!-- Reviews are not necessary, but you can uncomment the if needed -->
+    <!-- <section class="reviews" id="reviews">
       <h1 class="heading">student's <span>reviews</span></h1>
 
       <div class="swiper reviews-slider">
@@ -598,12 +657,10 @@
 
         <div class="swiper-pagination"></div>
       </div>
-    </section>
-
+    </section> -->
     <!-- reviews section ends -->
 
     <!-- contact section starts  -->
-
     <section class="contact" id="contact">
       <h1 class="heading"><span>contact</span> us</h1>
 
@@ -631,18 +688,28 @@
             name="email"
             class="box"
           />
-          <span>your number</span>
+          <span>phone number</span>
           <input
             type="number"
             required
-            placeholder="enter your valid number"
+            placeholder="enter a valid phone number"
             max="9999999999"
             min="0"
             name="number"
             class="box"
             onkeypress="if(this.value.length == 10) return false;"
           />
-          <span>select course</span>
+          <span>Message</span>
+          <textarea
+            name="message"
+            id="message"
+            rows="7"
+            class="box"
+            placeholder="Enter your message"
+          ></textarea>
+
+          <!-- Select course and gender are not necessary for now but you can uncomment them if needed. -->
+          <!-- <span>select course</span>
           <select name="couses" class="box" required>
             <option value="" disabled selected>select the course --</option>
             <option value="web developement">web developement</option>
@@ -663,16 +730,15 @@
             <label for="male">male</label>
             <input type="radio" name="gender" value="female" id="female" />
             <label for="female">female</label>
-          </div>
+          </div> -->
+
           <input type="submit" value="send message" class="btn" name="send" />
         </form>
       </div>
     </section>
-
     <!-- contact section ends -->
 
     <!-- footer section starts  -->
-
     <footer class="footer">
       <section>
         <div class="share">
@@ -689,7 +755,6 @@
         </div>
       </section>
     </footer>
-
     <!-- footer section ends -->
 
     <!-- swiper js link  -->

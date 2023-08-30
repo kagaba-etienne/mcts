@@ -239,6 +239,58 @@ section {
   color: var(--light-white);
 }
 
+.whoWeAre a {
+  margin-left: 42.5%;
+}
+.whoWeAre .row {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.whoWeAre .row .content {
+  text-align: start;
+  flex: 1 1 40rem;
+  height: 60vh;
+}
+
+.whoWeAre h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.whoWeAre span {
+  color: var(--green);
+}
+
+.whoWeAre a {
+  margin-top: 5rem;
+}
+
+.whoWeAre .row .content h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline dashed var(--green);
+}
+
+.whoWeAre .row .content span {
+  font-size: 1.6rem;
+  color: var(--green);
+}
+
+.whoWeAre .row .content p {
+  padding: 0.3rem 0;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
 .courses .slide {
   background-color: var(--light-bg);
   border-radius: 0.5rem;
@@ -512,6 +564,17 @@ section {
     font-size: 1.5rem;
     margin: 0 10%;
     width: 80%;
+  }
+
+  .whoWeAre .row .content {
+    min-height: 60vh;
+    height: max-content;
+    padding: 2rem;
+  }
+
+  .whoWeAre .row .content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
