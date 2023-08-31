@@ -106,6 +106,15 @@ section {
 .header .flex .logo {
   font-size: 2.5rem;
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.header .flex .logo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
   color: var(--white);
 }
 

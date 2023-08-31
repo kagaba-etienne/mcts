@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive Online Education Website Design</title>
+    <title>Mathematics Competitions Training Services</title>
 
     <!-- swiper css link  -->
     <link
@@ -26,16 +26,18 @@
 
     <header class="header">
       <section class="flex">
-        <a href="#home" class="logo">educa.</a>
+        <a href="#home" class="logo">
+          <img src="./images/logo.png" alt="" /> MCTS
+        </a>
 
         <nav class="navbar">
           <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#whoWeAre">who we are</a>
+          <a href="./pages/aboutus.html">about</a>
+          <a href="./pages/aboutus.html#whoWeAre">who we are</a>
           <!-- <a href="#courses">services</a> -->
           <a href="#teachers">Team</a>
           <!-- <a href="#reviews">reviews</a> -->
-          <a href="#contact">contact</a>
+          <a href="./pages/contactus.html">contact</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -56,7 +58,7 @@
             trainers empower students to excel. Join us and unlock your
             potential!
           </p>
-          <a href="#contact" class="btn">contact us</a>
+          <a href="./pages/contactus.html" class="btn">contact us</a>
         </div>
 
         <div class="image">
@@ -106,35 +108,6 @@
     </section>
 
     <!-- couter section ends -->
-
-    <!-- about section starts  -->
-    <section class="about" id="about">
-      <div class="row">
-        <div class="image">
-          <img src="images/about-img.svg" alt="" />
-        </div>
-
-        <div class="content">
-          <h3>About <span>us</span></h3>
-          <h2>Mission</h2>
-          <p>
-            Our mission is to transform the way students learn math by providing
-            them with engaging and challenging content, opportunities to
-            compete, and expert instruction. We believe that every student has
-            the potential to excel in math, and we are committed to helping them
-            reach their full potential.
-          </p>
-          <h2>Vision</h2>
-          <p>
-            Our vision is to be the leading provider of math education in the
-            world. We want to be the company that students trust to help them
-            succeed in math, no matter their background or skill level.
-          </p>
-          <a href="#contact" class="btn">contact us</a>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends -->
 
     <!-- courses section starts  -->
     <!-- ============ Courses section is not necessary for now but can be added when needed ========= -->
@@ -203,72 +176,6 @@
     </section> -->
 
     <!-- courses section ends -->
-
-    <!-- Who we are section starts  -->
-    <section class="whoWeAre" id="whoWeAre">
-      <h3>Who we <span>are</span></h3>
-      <div class="row">
-        <div class="content">
-          <h2>Uniqueness</h2>
-          <p>
-            We are unique because we offer a comprehensive approach to math
-            education. We provide students with tailored content, opportunities
-            to compete, and expert instruction. We also have a team of
-            experienced and passionate math educators who are committed to
-            helping students succeed.
-          </p>
-          <h2>Core Values</h2>
-          <p>
-            <span>**</span>Excellence:<span>**</span> We strive to provide the
-            highest quality math education possible.
-          </p>
-          <p>
-            <span>**</span>Innovation:<span>**</span> We are constantly looking
-            for new and better ways to teach math.
-          </p>
-          <p>
-            <span>**</span>Collaboration:<span>**</span> We work together with
-            students, parents, and educators to create a positive and supportive
-            learning environment.
-          </p>
-          <p>
-            <span>**</span>Fun:<span>**</span> We believe that learning math
-            should be fun and engaging.
-          </p>
-        </div>
-        <div class="content">
-          <h2>Customers</h2>
-          <p style="font-size: 1.4rem">
-            Our customers are students of all ages who are looking to improve
-            their math skills. We work with students from elementary school
-            through high school, as well as college students and adults.
-            <br />
-            We believe that math is a powerful tool that can help students
-            succeed in school, in their careers, and in life. We are committed
-            to helping students develop a love of math and the skills they need
-            to succeed.
-          </p>
-          <p>
-            <span>**</span>Join us and unlock your potential!<span>**</span>
-          </p>
-          <h2>Goals</h2>
-          <p>
-            <span>*</span>Expand our reach to more students around the world.
-          </p>
-          <p><span>*</span>Develop new and innovative ways to teach math.</p>
-          <p>
-            <span>*</span>Partner with schools and other organizations to
-            improve math education.
-          </p>
-          <p>
-            <span>*</span>Become the leading provider of math education in the
-            world.
-          </p>
-        </div>
-      </div>
-      <a href="#contact" class="btn">contact us</a>
-    </section>
-    <!-- Who we are section ends -->
 
     <!-- teachers section starts  -->
     <section class="teachers" id="teachers">
@@ -663,84 +570,6 @@
       </div>
     </section> -->
     <!-- reviews section ends -->
-
-    <!-- contact section starts  -->
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> us</h1>
-
-      <div class="row">
-        <div class="image">
-          <img src="images/contact-img.svg" alt="" />
-        </div>
-
-        <form action="" method="post">
-          <span>your name</span>
-          <input
-            type="text"
-            required
-            placeholder="enter your full name"
-            maxlength="50"
-            name="name"
-            class="box"
-          />
-          <span>your email</span>
-          <input
-            type="email"
-            required
-            placeholder="enter your valid email"
-            maxlength="50"
-            name="email"
-            class="box"
-          />
-          <span>phone number</span>
-          <input
-            type="number"
-            required
-            placeholder="enter a valid phone number"
-            max="9999999999"
-            min="0"
-            name="number"
-            class="box"
-            onkeypress="if(this.value.length == 10) return false;"
-          />
-          <span>Message</span>
-          <textarea
-            name="message"
-            id="message"
-            rows="7"
-            class="box"
-            placeholder="Enter your message"
-          ></textarea>
-
-          <!-- Select course and gender are not necessary for now but you can uncomment them if needed. -->
-          <!-- <span>select course</span>
-          <select name="couses" class="box" required>
-            <option value="" disabled selected>select the course --</option>
-            <option value="web developement">web developement</option>
-            <option value="science and biology">science and biology</option>
-            <option value="engineering">engineering</option>
-            <option value="digital marketing">digital marketing</option>
-            <option value="graphic design">graphic design</option>
-            <option value="teaching">teaching</option>
-            <option value="social studies">social studies</option>
-            <option value="data analysis">data analysis</option>
-            <option value="artificial intelligence">
-              artificial intelligence
-            </option>
-          </select>
-          <span>select gender</span>
-          <div class="radio">
-            <input type="radio" name="gender" value="male" id="male" />
-            <label for="male">male</label>
-            <input type="radio" name="gender" value="female" id="female" />
-            <label for="female">female</label>
-          </div> -->
-
-          <input type="submit" value="send message" class="btn" name="send" />
-        </form>
-      </div>
-    </section>
-    <!-- contact section ends -->
 
     <!-- footer section starts  -->
     <footer class="footer">
