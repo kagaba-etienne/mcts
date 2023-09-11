@@ -315,6 +315,35 @@ section h1 {
 .news span {
   color: var(--green);
 }
+
+.news .popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.news .popup .content {
+  position: fixed;
+  margin-top: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: var(--white);
+  height: 80vh;
+  width: 65vw;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 1rem;
+}
+
 .news .row {
   display: flex;
   align-items: center;
@@ -331,21 +360,59 @@ section h1 {
   gap: 1.3rem;
 }
 
-.news .row .content img {
+.news .popup .content {
+  text-align: start;
+  flex: 1 1 70rem;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.news .popup .content .close-btn {
+  cursor: pointer;
+  position: sticky;
+  margin-left: 95%;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--green);
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+}
+
+.news .popup.active .overlay {
+  display: block;
+}
+
+.news .popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.news .row .content img,
+.news .popup .content img {
   width: 100%;
   border-radius: 0.7rem;
 }
 
-.news .row .content h3 {
+.news .row .content h3,
+.news .popup .content h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.news .row .content h2 {
+.news .row .content h2,
+.news .popup .content h2 {
   font-size: 2rem;
 }
 
-.news .row .content p {
+.news .row .content p,
+.news .popup .content p {
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -641,6 +708,10 @@ section h1 {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  .news .popup .content {
+    width: 95vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -675,6 +746,10 @@ section h1 {
   .home .row .content h3 {
     font-size: 6rem;
   }
+
+  .news .popup .content {
+    width: 95vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -688,5 +763,9 @@ section h1 {
 
   .heading {
     font-size: 3rem;
+  }
+
+  .news .popup .content {
+    width: 95vw;
   }
 }
