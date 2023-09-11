@@ -74,7 +74,3 @@ var swiper = new Swiper(".reviews-slider", {
    },
 });
 
-
-function togglePopup(){
- document.getElementById('popup').classList.toggle('active');
-}
